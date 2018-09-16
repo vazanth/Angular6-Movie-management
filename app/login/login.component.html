@@ -1,0 +1,39 @@
+<div class="outterwrap">
+<div class="container">
+  <div class="pagecanvas">
+    <div class="row signupwrap">
+      <b><h1>{{title}}</h1></b>
+      <form [formGroup]="loginDetails" (click)="submit(loginDetails.value)">
+        <div class="row">
+          <div class="input-group fullwidth">
+            <mat-form-field>
+              <input type="text" id="UserName" matInput class="form-control"
+                     formControlName="userName" placeholder="UserName"/>
+            </mat-form-field>
+            <mat-form-field>
+              <input type="text" id="Password" matInput class="form-control"
+                     formControlName="password" placeholder="Password"/>
+            </mat-form-field>
+          </div>
+          <div class="form-group doublebtnwidth">
+            <button mat-raised-button color="accent" type="submit"
+                    [disabled]="loginDetails.invalid">Submit
+            </button>
+            <button mat-raised-button color="warn" type="submit"
+                    (click)="clearForm()">Reset
+            </button>
+          </div>
+          <div class="form-group socbtnwidth">
+            <button type="button" class="btn btn-danger btn-block" 
+            (click)="tryGoogleLogin()">Login with Google</button>
+          </div>
+          <div class="form-group socbtnwidth">
+            <button mat-raised-button color="warn" type="button"
+                    class="btn btn-danger btn-block" (click)="logout()">Logout</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>

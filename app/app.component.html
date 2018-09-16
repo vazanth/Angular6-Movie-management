@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <mat-toolbar color="accent">
+    <span>{{title}}</span>
+    <span class="toolbar"></span>
+    <span>
+      <button mat-button><a [routerLink]="['/home']" class="navtitle">Home</a></button>
+     <button mat-button *ngIf='showSignup'><a [routerLink]="['/signup']" class="navtitle">Sign-up</a></button>
+     <button mat-button *ngIf='showLogin'><a [routerLink]="['/login']" class="navtitle">Login</a></button>
+     <button mat-button *ngIf='showLogout'><a [routerLink]="['/home']" class="navtitle">Logout</a></button>
+   </span>
+  </mat-toolbar>
+  <router-outlet></router-outlet>
+
+  <footer>
+    <mat-toolbar color="accent">
+      <span>{{footer}}</span>
+      <span class="toolbar"></span>
+      <span>
+
+      </span>
+    </mat-toolbar>
+  </footer>
+</div>

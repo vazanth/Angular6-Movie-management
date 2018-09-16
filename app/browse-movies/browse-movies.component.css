@@ -1,0 +1,13 @@
+.row > mat-card {
+    width: 100%
+}
+.search{
+    padding-left: 25%;
+    background-color:  #f1f1f1;
+}
+
+.fullwidth{
+    display: flex;
+    flex-direction: column;
+    width: 50%
+  }

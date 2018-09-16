@@ -1,0 +1,38 @@
+
+.signupwrap {
+  margin: 2% 20% 6% 20%;
+  /* padding: 10px 0 20px 75px;*/
+  background-color: #fff;
+}
+.pagecanvas{
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-top: 1px;
+}
+.outterwrap{
+  background: #e6ecf0;
+  color: #14171a;
+  height: 600px;
+}
+
+.fullwidth{
+  display: flex;
+  flex-direction: column;
+}
+
+h1{
+  color: goldenrod;
+  font-family: sans-serif;
+}
+
+.fullwidth > *{
+  width: 50%;
+}
+
+.btnwidth {
+  margin: 20px 25px 0 0px;
+}
+
+.radiowidth{
+  padding-left: 20px;
+}

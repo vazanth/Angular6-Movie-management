@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+
+.outterwrap{
+  background: #e6ecf0;
+  color: #14171a;
+  height: 500px;
+}
+
+.headeralign{
+  margin: 8% 0% 0% 35%;
+}
+
+h1{
+  color: goldenrod;
+  font-family: sans-serif;
+}
+.signupwrap {
+  margin: 5% 20% 6% 20%;
+  padding: 10px 0 20px 75px;
+  background-color: #fff;
+}
+.pagecanvas{
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-top: 1px;
+}
+.fullwidth{
+  display: flex;
+  flex-direction: column;
+}
+
+.fullwidth > *{
+  width: 50%;
+}
+
+.doublebtnwidth {
+  margin: 20px 25px 0 100px;
+  width: 100%;
+}
+
+.socbtnwidth{
+  width: 80%;
+  margin-top:20px; 
+}
+
+.doublebtnwidth > *{
+  margin: 1% !important;
+}

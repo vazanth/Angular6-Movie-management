@@ -1,0 +1,27 @@
+<mat-card  class="search">
+  <mat-card-content>
+    <div><label>Search Value:</label></div>
+    <div class="form-group fullwidth">
+      <mat-form-field>
+      <input matInput type="text" placeholder="Search..." name="Searchtext" [(ngModel)]="Searchtext">
+    </mat-form-field>
+    <span><button mat-raised-button color="primary" type="button" (click)="search(Searchtext)">Search</button></span>
+    </div>
+  </mat-card-content>
+</mat-card>
+<mat-card>
+  <mat-card-content>
+    <mat-grid-list cols="4">
+      <mat-grid-tile  *ngFor = 'let fd of filtereddetails'><img [style.width.px]="ImageWidth" [style.height.px]="ImageHeight"
+         [src]="fd.images" /></mat-grid-tile>
+     </mat-grid-list>
+  </mat-card-content>
+</mat-card>
+<mat-card *ngIf='!showbox'>
+  <mat-card-content>
+    <mat-grid-list cols="4">
+      <mat-grid-tile  *ngFor = 'let sd of sampledetails'><img [style.width.px]="ImageWidth" [style.height.px]="ImageHeight"
+         [src]="sd.images" /></mat-grid-tile>
+    </mat-grid-list>
+  </mat-card-content>
+</mat-card>
