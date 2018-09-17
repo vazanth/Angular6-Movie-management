@@ -18,12 +18,6 @@ import {AuthService} from './auth/auth.service';
 import { BrowseMoviesComponent } from './browse-movies/browse-movies.component';
 
 export const fireBaseConfig = {
-    apiKey: 'AIzaSyAaPAUuX4EGsEWh1lDuPzXw_CoQa0_9aiY',
-    authDomain: 'myapp-6794.firebaseapp.com',
-    databaseURL: 'https://myapp-6794.firebaseio.com',
-    projectId: 'myapp-6794',
-    storageBucket: '',
-    messagingSenderId: '1048991363877'
 };
 
 @NgModule({
